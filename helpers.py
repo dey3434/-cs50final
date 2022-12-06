@@ -30,7 +30,7 @@ def apology(message, code=400):
 def searched(name):
     # query for just the search results
     results = db.execute(
-        "SELECT title,artist FROM metacritic WHERE title LIKE ?", '%'+name+'%')
+        "SELECT metacritic.title,metacritic.artist,fantano.project_art FROM metacritic LEFT JOIN fantano ON metacritic.title LIKE fantano.title WHERE metacritic.title LIKE ?", '%'+name+'%')
     # query for the reviews related to the album
     reviews = db.execute(
         "SELECT metacritic.title,metacritic.artist,fantano.project_art,reviews.review,reviews.rating,reviews.displayname "
