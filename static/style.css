@@ -77,6 +77,18 @@ h2 {
     vertical-align: middle;
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    vertical-align: middle;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    vertical-align: middle;
+}
+
 ol {
     font-family: 'Montserrat', sans-serif;
     color: white;
