@@ -1,5 +1,3 @@
-# -cs50final
-
 # CS 50 Final Project: The Peanut Gallery #
 
 ## Background Information ##
