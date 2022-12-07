@@ -1,6 +1,6 @@
 # -cs50final
 
-== CS 50 Final Project: The Peanut Gallery == 
+# CS 50 Final Project: The Peanut Gallery #
 
 ## Background Information ##
 
@@ -17,15 +17,7 @@ into the terminal. From here, you should allow time for the file to unpack fully
 
 ## Running the Peanut Gallery ## 
 
-After launching VSCode, set your working directory to /peanutgallery. You can do this by typing
-
-cd peanutgallery 
-
-into the terminal. To launch the website, type
-
-flask run
-
-and proceed to the link it produces in the terminal. To navigate further portions of the website, read below!
+After launching VSCode, set your working directory to /peanutgallery. You can do this by typing "cd peanutgallery" into the terminal. To launch the website, type "flask run" and proceed to the link it produces in the terminal. To navigate further portions of the website, read below!
 
 The Peanut Gallery Website Navigation Manual
 
