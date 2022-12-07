@@ -1,4 +1,4 @@
-== CS 50 Final Project: The Peanut Gallery == 
+# CS 50 Final Project: The Peanut Gallery # 
 
 Video Link: https://youtu.be/9G2D7fBOQbE
 
