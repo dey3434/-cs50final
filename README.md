@@ -10,16 +10,16 @@ The Peanut Gallery is a website curated for music enthusiasts to rate and view r
 
 To set up, download the .zip file found in the Gradescope folder or the GitHub repository at bit.ly/cs50peanutgallery. After downloading the .zip file, unzip it on your computer. Open VSCode. Drag and drop the zip file into your VSCode. Make sure you are in your main directory and then unzip the file using by typing
 
-unzip peanutgallery.zip
+unzip peanutgallery-main.zip
 
 into the terminal. From here, you should allow time for the file to unpack fully. Make sure all the appropriate files are there. There should be two csv files, albums.db, app.py, helpers.py, DESIGN.md and README.md. In templates, you should see account.html, album.html, apology.html, home.html, layout.html, login.html, register.html, results.html, search.html, top.html. In static, you should see style.css. Now, move to the “running” instructions below. 
 
 
 ## Running the Peanut Gallery ## 
 
-After launching VSCode, set your working directory to /peanutgallery. You can do this by typing
+After launching VSCode, set your working directory to /peanutgallery-main. You can do this by typing
 
-cd peanutgallery 
+cd peanutgallery-main 
 
 into the terminal. To launch the website, type
 
