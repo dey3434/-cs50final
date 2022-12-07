@@ -13,7 +13,7 @@ Find an Album
                 {% for result in results %}
                 <li>
                     <!-- use the url to pass the variables for each of the result to album if it is clicked -->
-                    <a href="/album?title={{ result.title }}&artist={{ result.artist }}&cover={{ result.project_art }}">
+                    <a href="/album?title={{ result.title }}&artist={{ result.artist }}&cover={{ result.project_art }}&score={{ result.score }}">
                         {{ result.title }} by {{ result.artist }}
                     </a>
                 </li>
