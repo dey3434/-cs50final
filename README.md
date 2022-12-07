@@ -1,4 +1,6 @@
-# CS 50 Final Project: The Peanut Gallery #
+== CS 50 Final Project: The Peanut Gallery == 
+
+Video Link: https://youtu.be/9G2D7fBOQbE
 
 ## Background Information ##
 
@@ -15,7 +17,15 @@ into the terminal. From here, you should allow time for the file to unpack fully
 
 ## Running the Peanut Gallery ## 
 
-After launching VSCode, set your working directory to /peanutgallery. You can do this by typing "cd peanutgallery" into the terminal. To launch the website, type "flask run" and proceed to the link it produces in the terminal. To navigate further portions of the website, read below!
+After launching VSCode, set your working directory to /peanutgallery. You can do this by typing
+
+cd peanutgallery 
+
+into the terminal. To launch the website, type
+
+flask run
+
+and proceed to the link it produces in the terminal. To navigate further portions of the website, read below!
 
 The Peanut Gallery Website Navigation Manual
 
@@ -45,7 +55,4 @@ From any point on The Peanut Gallery, navigate your cursor to the top white bar 
 
 ## How to use the Search ## 
 
-Through the navigation bar, press the “Search” button on the top left side of the screen. Here, you can look for a specific album to find to find the Peanut Score. To search, click on the white box that has the placeholder “Search…”. This is a temporary placeholder that will not show up in your final search results. Type the specific album you are looking for & press the blue “Go!” button. 
-
-Video Link: 
-
+Through the navigation bar, press the “Search” button on the top left side of the screen. Here, you can look for a specific album to find the Peanut Score. To search, click on the white box that has the placeholder “Search…”. This is a temporary placeholder that will not show up in your final search results. Type the specific album you are looking for & press the blue “Go!” button. 
