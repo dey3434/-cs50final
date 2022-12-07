@@ -30,14 +30,14 @@ def apology(message, code=400):
 def searched(name):
     # query for just the search results
     results = db.execute(
-        "SELECT metacritic.title,metacritic.artist,fantano.project_art FROM metacritic LEFT JOIN fantano ON metacritic.title LIKE fantano.title WHERE metacritic.title LIKE ?", '%'+name+'%')
+        "SELECT metacritic.title,metacritic.artist,fantano.project_art,(((cast(fantano.rating AS Float)*10) + cast(metacritic.CriticScore AS Float))/2.0) as score FROM metacritic LEFT JOIN fantano ON metacritic.title LIKE fantano.title WHERE metacritic.title LIKE ?", '%'+name+'%')
     # query for the reviews related to the album
     reviews = db.execute(
-        "SELECT metacritic.title,metacritic.artist,fantano.project_art,reviews.review,reviews.rating,reviews.displayname "
+        "SELECT metacritic.title,metacritic.artist,fantano.project_art,reviews.review,reviews.rating,reviews.displayname,(((cast(fantano.rating AS Float)*10) + cast(metacritic.CriticScore AS Float))/2.0) as score "
         "FROM metacritic LEFT JOIN fantano ON metacritic.title LIKE fantano.title "
         "LEFT JOIN reviews ON metacritic.title LIKE reviews.album AND metacritic.artist LIKE reviews.artist WHERE metacritic.title LIKE ? "
         "UNION "
-        "SELECT metacritic.title,metacritic.artist,fantano.project_art,reviews.review,reviews.rating,reviews.displayname "
+        "SELECT metacritic.title,metacritic.artist,fantano.project_art,reviews.review,reviews.rating,reviews.displayname,(((cast(fantano.rating AS Float)*10) + cast(metacritic.CriticScore AS Float))/2.0) as score "
         "FROM reviews LEFT JOIN metacritic ON metacritic.title LIKE reviews.album AND metacritic.artist LIKE reviews.artist "
         "LEFT JOIN fantano ON metacritic.title LIKE fantano.title WHERE metacritic.title LIKE ? ", '%'+name+'%', '%'+name+'%')
     # pass everything to results
